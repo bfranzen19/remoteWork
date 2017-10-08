@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>THE rock, paper, scissors</title>
+    <!--links to external js file-->
+    <script src="option_1.js"></script>
+    <!--links to external css file-->
+    <link href="option_1.css" type="text/css" rel="stylesheet"/>
+  </head>
+
+  <body>
+
+    <div class="heading">
+      <h1><b>welcome to THE rock, paper, scissors</b></h1>
+      <h2>please pick one and hit the play button</h2> <br/>
+    </div>
+
+    <div class="options">
+      <div id="rock">
+        <ul>
+        <li><a href="#" onclick="setUserSel('rock')">
+          <img class="image" id="rock"  src="http://shop.wwe.com/on/demandware.static/-/Sites/default/dw29757933/images/slot/landing/superstar-landing/Superstar-Category_Superstar_562x408_theRock.png"alt="the rock"/>
+        </a></li><br/><br/>
+      </div>
+
+      <div id="paper">
+        <li><a href="#" onclick="setUserSel('paper')">
+          <img class="image" id="paper"  src="http://images.clipartpanda.com/paper-clip-art-niEBBqMiA.svg" alt="paper"/>
+        </a></li><br/><br/>
+      </div>
+
+      <div id="scissors">
+        <li><a href="#" onclick="setUserSel('scissors')">
+          <img class="image" id="scissors"  src="https://cdn.pixabay.com/photo/2015/06/11/23/57/scissors-806369_960_720.png" alt="scissors"/>
+        </a></li><br/><br/>
+        </ul>
+      </div>
+    </div>
+
+
+     <div class="button" id="playButton" onclick="changeClass()">
+       <button onclick="letsPlay(userSel, compSel)">play</button>
+     </div>
+       <br /> <br /> <br />
+    <div>
+      <p id="result"></p>
+    </div>
+
+  </body>
+
+</html>
