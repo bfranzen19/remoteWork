@@ -94,5 +94,5 @@ and names a winner */
     finalResult = compareChoices(userSel, compSel);
     // print user selection, computer selection, and winner to page
     document.getElementById("result").innerHTML="<p><em><b>RECAP:</b></em><br/>you selected- " + userSel + "<br/> the computer selected- " + compSel +"</p><p><b>you "+ finalResult + "!</b></p>";
-    //alert("you " + finalResult + "!");
+    alert("you " + finalResult + "!");
   }
